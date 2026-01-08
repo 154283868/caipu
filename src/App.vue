@@ -29,15 +29,32 @@ const loadOrderHistory = async () => {
 const handleSelectDish = (dish) => {
   const index = selectedDishes.value.findIndex((d) => d.id === dish.id);
   if (index === -1) {
-    selectedDishes.value.push(dish);
+    selectedDishes.value.push({ ...dish, quantity: 1 });
+  } else {
+    selectedDishes.value[index].quantity++;
   }
 };
 
 const handleRemoveDish = (dishId) => {
   const index = selectedDishes.value.findIndex((d) => d.id === dishId);
   if (index !== -1) {
+    if (selectedDishes.value[index].quantity > 1) {
+      selectedDishes.value[index].quantity--;
+    } else {
+      selectedDishes.value.splice(index, 1);
+    }
+  }
+};
+
+const handleDeleteDish = (dishId) => {
+  const index = selectedDishes.value.findIndex((d) => d.id === dishId);
+  if (index !== -1) {
     selectedDishes.value.splice(index, 1);
   }
+};
+
+const handleClearAll = () => {
+  selectedDishes.value = [];
 };
 
 const handleConfirmOrder = async () => {
@@ -89,12 +106,15 @@ onMounted(() => {
       :selected-dishes="selectedDishes"
       @select-dish="handleSelectDish"
       @remove-dish="handleRemoveDish"
+      @delete-dish="handleDeleteDish"
+      @clear-all="handleClearAll"
       @confirm-order="handleConfirmOrder"
     />
 
     <HistoryComponent
       v-if="activeTab === 'history'"
       :order-history="orderHistory"
+      @reorder="handleReorder"
     />
 
     <div class="tab-bar">

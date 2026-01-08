@@ -99,12 +99,25 @@ const formatTime = (timeStr) => {
       <div v-for="order in filteredOrders" :key="order.id" class="history-item">
         <div class="history-header">
           <span class="history-time">{{ formatTime(order.time) }}</span>
+          <span class="history-total"
+            >总计: ¥{{ calculateOrderTotal(order) }}</span
+          >
         </div>
         <div class="history-dishes">
-          <div v-for="dish in order.dishes" :key="dish.id">
-            {{ dish.name }}
+          <div
+            v-for="dish in order.dishes"
+            :key="dish.id"
+            class="history-dish-item"
+          >
+            <span class="dish-name">{{ dish.name }}</span>
+            <span class="dish-detail">
+              ¥{{ dish.price }} × {{ dish.quantity || 1 }}
+            </span>
           </div>
         </div>
+        <button class="reorder-button" @click="handleReorder(order)">
+          重新下单
+        </button>
       </div>
     </div>
   </div>

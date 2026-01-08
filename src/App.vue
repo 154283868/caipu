@@ -19,7 +19,7 @@ const loadDishes = async () => {
 
 const loadOrderHistory = async () => {
   try {
-    const response = await fetch("https://154283868.github.io/caipu/orders");
+    const response = await fetch("./orders.json");
     orderHistory.value = await response.json();
   } catch (error) {
     console.error("加载历史订单失败:", error);

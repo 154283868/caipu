@@ -115,6 +115,7 @@ onMounted(() => {
       v-if="activeTab === 'history'"
       :order-history="orderHistory"
       @reorder="handleReorder"
+      @back-to-menu="() => (activeTab = 'menu')"
     />
 
     <div class="tab-bar">

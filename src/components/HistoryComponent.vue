@@ -8,6 +8,8 @@ const props = defineProps({
   },
 });
 
+const emit = defineEmits(["reorder", "back-to-menu"]);
+
 const selectedTimeFilter = ref("all");
 
 const timeFilters = computed(() => {
@@ -20,11 +22,30 @@ const timeFilters = computed(() => {
   monthAgo.setMonth(monthAgo.getMonth() - 1);
 
   return [
-    { label: "全部", value: "all" },
-    { label: "今天", value: "today" },
-    { label: "昨天", value: "yesterday" },
-    { label: "最近7天", value: "week" },
-    { label: "最近30天", value: "month" },
+    {
+      label: "全部",
+      value: "all",
+    },
+
+    {
+      label: "今天",
+      value: "today",
+    },
+
+    {
+      label: "昨天",
+      value: "yesterday",
+    },
+
+    {
+      label: "最近7天",
+      value: "week",
+    },
+
+    {
+      label: "最近30天",
+      value: "month",
+    },
   ];
 });
 
@@ -75,9 +96,7 @@ const formatTime = (timeStr) => {
   const minutes = timeStr.substring(10, 12);
   return `${year}-${month}-${day} ${hours}:${minutes}`;
 };
-</script>
-
-<template>
+</script><template>
   <div class="history-section">
     <div class="history-header">
       <div class="history-title">历史订单</div>
@@ -99,9 +118,6 @@ const formatTime = (timeStr) => {
       <div v-for="order in filteredOrders" :key="order.id" class="history-item">
         <div class="history-header">
           <span class="history-time">{{ formatTime(order.time) }}</span>
-          <span class="history-total"
-            >总计: ¥{{ calculateOrderTotal(order) }}</span
-          >
         </div>
         <div class="history-dishes">
           <div
@@ -110,14 +126,9 @@ const formatTime = (timeStr) => {
             class="history-dish-item"
           >
             <span class="dish-name">{{ dish.name }}</span>
-            <span class="dish-detail">
-              ¥{{ dish.price }} × {{ dish.quantity || 1 }}
-            </span>
+            <span class="dish-detail"> × {{ dish.quantity || 1 }} </span>
           </div>
         </div>
-        <button class="reorder-button" @click="handleReorder(order)">
-          重新下单
-        </button>
       </div>
     </div>
   </div>

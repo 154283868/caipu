@@ -60,7 +60,7 @@ const handleConfirmOrder = async () => {
   orderHistory.value.unshift(newOrder);
 
   try {
-    await fetch("http://localhost:3001/api/orders", {
+    await fetch("./orders.json", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

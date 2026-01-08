@@ -10,7 +10,7 @@ const orderHistory = ref([]);
 
 const loadDishes = async () => {
   try {
-    const response = await fetch("/dishes.json");
+    const response = await fetch("./dishes.json");
     dishes.value = await response.json();
   } catch (error) {
     console.error("加载菜品数据失败:", error);
@@ -19,7 +19,7 @@ const loadDishes = async () => {
 
 const loadOrderHistory = async () => {
   try {
-    const response = await fetch("http://localhost:3001/api/orders");
+    const response = await fetch("https://154283868.github.io/caipu/orders");
     orderHistory.value = await response.json();
   } catch (error) {
     console.error("加载历史订单失败:", error);

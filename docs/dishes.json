@@ -5,79 +5,79 @@
         "id": 1,
         "name": "鱼香肉丝",
         "price": 32,
-        "image": "/assets/meat/yxss.jpg"
+        "image": "./assets/meat/yxss.jpg"
       },
       {
         "id": 2,
         "name": "回锅肉",
         "price": 32,
-        "image": "/assets/meat/hgr.png"
+        "image": "./assets/meat/hgr.png"
       },
       {
         "id": 3,
         "name": "回锅肉2",
         "price": 32,
-        "image": "/assets/meat/hgr1.jpg"
+        "image": "./assets/meat/hgr1.jpg"
       },
       {
         "id": 4,
         "name": "猪肉炖粉条",
         "price": 32,
-        "image": "/assets/meat/zrdft.jpg"
+        "image": "./assets/meat/zrdft.jpg"
       },
       {
         "id": 5,
         "name": "可乐鸡翅",
         "price": 32,
-        "image": "/assets/meat/kljc.png"
+        "image": "./assets/meat/kljc.png"
       },
       {
         "id": 6,
         "name": "辣椒炒肉",
         "price": 32,
-        "image": "/assets/meat/ljcr.png"
+        "image": "./assets/meat/ljcr.png"
       },
       {
         "id": 7,
         "name": "什锦虾仁",
         "price": 32,
-        "image": "/assets/meat/smxr.png"
+        "image": "./assets/meat/smxr.png"
       },
       {
         "id": 8,
         "name": "青椒木耳小炒肉",
         "price": 32,
-        "image": "/assets/meat/pxmmxlr.png"
+        "image": "./assets/meat/pxmmxlr.png"
       },
       {
         "id": 9,
         "name": "黄焖鸡",
         "price": 32,
-        "image": "/assets/meat/hmj.png"
+        "image": "./assets/meat/hmj.png"
       },
       {
         "id": 10,
         "name": "干锅虾",
         "price": 32,
-        "image": "/assets/meat/ggx.png"
+        "image": "./assets/meat/ggx.png"
       },
       {
         "id": 11,
         "name": "西红柿炖牛腩",
         "price": 32,
-        "image": "/assets/meat/xhsdnn.png"
+        "image": "./assets/meat/xhsdnn.png"
       },
       {
         "id": 12,
         "name": "西兰花炒虾仁",
         "price": 32,
-        "image": "/assets/meat/xlhcxr.jpg"
+        "image": "./assets/meat/xlhcxr.jpg"
       },
       {
         "id": 13,
         "name": "烧烤",
         "price": 32,
-        "image": "/assets/meat/sk.png"
+        "image": "./assets/meat/sk.png"
       }
     ],
     "素菜": [
@@ -85,43 +85,43 @@
         "id": 14,
         "name": "小瓜炒鸡蛋",
         "price": 28,
-        "image": "/assets/su/xgcjd.png"
+        "image": "./assets/su/xgcjd.png"
       },
       {
         "id": 15,
         "name": "菠菜鸡蛋",
         "price": 28,
-        "image": "/assets/su/bcjd.png"
+        "image": "./assets/su/bcjd.png"
       },
       {
         "id": 16,
         "name": "豆芽鸡蛋",
         "price": 28,
-        "image": "/assets/su/ljdyjd.png"
+        "image": "./assets/su/ljdyjd.png"
       },
       {
         "id": 17,
         "name": "酸辣白菜",
         "price": 28,
-        "image": "/assets/su/slbc.png"
+        "image": "./assets/su/slbc.png"
       },
       {
         "id": 18,
         "name": "豆皮小瓜辣椒",
         "price": 28,
-        "image": "/assets/su/dpxglj.png"
+        "image": "./assets/su/dpxglj.png"
       },
       {
         "id": 19,
         "name": "干煸豆角",
         "price": 28,
-        "image": "/assets/su/gbdj.png"
+        "image": "./assets/su/gbdj.png"
       },
       {
         "id": 20,
         "name": "香菇青菜",
         "price": 12,
-        "image": "/assets/colddishes/xgqc.png"
+        "image": "./assets/colddishes/xgqc.png"
       }
     ]
   },
@@ -130,13 +130,13 @@
       "id": 21,
       "name": "卤香平盘",
       "price": 12,
-      "image": "/assets/colddishes/lxpp.png"
+      "image": "./assets/colddishes/lxpp.png"
     },
     {
       "id": 22,
       "name": "葱香木耳",
       "price": 12,
-      "image": "/assets/colddishes/cxme.png"
+      "image": "./assets/colddishes/cxme.png"
     }
   ],
   "主食": [
@@ -144,31 +144,31 @@
       "id": 23,
       "name": "小龙虾板面",
       "price": 5,
-      "image": "/assets/staplefood/xlxbm.png"
+      "image": "./assets/staplefood/xlxbm.png"
     },
     {
       "id": 24,
       "name": "油泼面",
       "price": 8,
-      "image": "/assets/staplefood/ypm.jpg"
+      "image": "./assets/staplefood/ypm.jpg"
     },
     {
       "id": 25,
       "name": "豆角焖面",
       "price": 12,
-      "image": "/assets/staplefood/djmm.png"
+      "image": "./assets/staplefood/djmm.png"
     },
     {
       "id": 26,
       "name": "葱香拌面",
       "price": 12,
-      "image": "/assets/staplefood/cxbm.png"
+      "image": "./assets/staplefood/cxbm.png"
     },
     {
       "id": 27,
       "name": "蒸饺(猪肉大葱...)",
       "price": 12,
-      "image": "/assets/staplefood/zj.png"
+      "image": "./assets/staplefood/zj.png"
     }
   ],
   "汤品": [
@@ -176,13 +176,13 @@
       "id": 28,
       "name": "玉米排骨汤",
       "price": 28,
-      "image": "/assets/beverages/ympgt.png"
+      "image": "./assets/beverages/ympgt.png"
     },
     {
       "id": 29,
       "name": "鲫鱼豆腐汤",
       "price": 28,
-      "image": "/assets/beverages/jydf.png"
+      "image": "./assets/beverages/jydf.png"
     }
   ],
   "饮料": [
@@ -190,31 +190,31 @@
       "id": 30,
       "name": "可乐",
       "price": 5,
-      "image": "/assets/beverages/kl.jpg"
+      "image": "./assets/beverages/kl.jpg"
     },
     {
       "id": 31,
       "name": "雪碧",
       "price": 5,
-      "image": "/assets/beverages/xb.jpg"
+      "image": "./assets/beverages/xb.jpg"
     },
     {
       "id": 32,
       "name": "橙汁",
       "price": 8,
-      "image": "/assets/beverages/cz.jpg"
+      "image": "./assets/beverages/cz.jpg"
     },
     {
       "id": 33,
       "name": "绿茶",
       "price": 6,
-      "image": "/assets/beverages/lc.jpg"
+      "image": "./assets/beverages/lc.jpg"
     },
     {
       "id": 34,
       "name": "奶茶",
       "price": 12,
-      "image": "/assets/beverages/nc.jpg"
+      "image": "./assets/beverages/nc.jpg"
     }
   ]
 }

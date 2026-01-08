@@ -15,10 +15,10 @@ export default defineConfig({
     host: true,
     open: true,
     proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
+      '/caipu': {
+        target: 'https://154283868.github.io/caipu/',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
+        rewrite: (path) => path.replace(/^\/caipu/, '')
       }
     }
   },
